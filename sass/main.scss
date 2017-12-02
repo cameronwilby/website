@@ -1,0 +1,72 @@
+@import 'grid';
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    
+    margin: 0rem 0;
+    font-weight: 100;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+}
+
+div.row {
+    text-align: center;
+    padding: 0;
+    display: block;
+    border-top: 1px solid lightgray;
+    margin: 2rem auto;
+    padding-top: 1rem;
+    width: 19rem;
+
+    div.col-6-sm {
+        display: inline-block;
+        list-style-type: none;
+        margin: 1rem 0;
+
+        a {
+            text-decoration: none !important;
+
+            i {
+                font-size: 3rem !important;
+                display: block;
+
+                &.fa.fa-github { color: #24292e; }
+                &.fa.fa-linkedin { color: #0077B5; }
+                &.fa.fa-twitter { color: #1da1f2; }
+                &.fa.fa-file-text { color: #fff18f; }
+                &.fa.fa-medium { color: #E9F3EB; }
+                &.fa.fa-envelope { color: lightblue;}
+            }
+
+            span {
+                font-size: 0.8em !important;
+                display: block;
+                margin-top: 0.2rem;
+                font-weight: 100;
+            }
+        }
+
+        &:nth-child(odd) {
+            float: left;
+        }
+        &:nth-child(even) {
+            float: right;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
