@@ -1,3 +1,4 @@
+#!/usr/bin/env nodejs
 const express = require('express');
 const path = require('path');
 const sass = require('node-sass-middleware');
